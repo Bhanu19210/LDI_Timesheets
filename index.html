@@ -151,7 +151,7 @@
             }
 
             // Adjust for the selected week
-            const weekStart = new Date(firstMonday);
+            const weekStart = new Date(firstMonday.toLocaleDateString());
             weekStart.setDate(firstMonday.getDate() + (week - 1) * 7);
             
             const days = ['mon', 'tue', 'wed', 'thu', 'fri'];
